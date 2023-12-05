@@ -1,12 +1,14 @@
 import React from "react";
 import Carousel from "./Carousel";
 import HomePageCard from "./HomePageCard";
+import CarouselCategory from "./CarouselCategory";
+import CarouselProduct from "./CarouselProduct";
 
 const HomePage = () => {
   return (
     <div className="bg-amazonclone-background">
-      <div className="min-w-[1000px] max-w-[1500px] m-auto bg-purple-600 ">
-        testing
+      <div className="min-w-[1000px] max-w-[1500px] m-auto bg-slate-200 ">
+        
         <Carousel />
         <div className="grid grid-cols-3 xl:grid-cols-4 -mt-80">
           <HomePageCard
@@ -56,6 +58,15 @@ const HomePage = () => {
               alt="Banner 2"
             />
           </div>
+        </div>
+        <CarouselProduct/>
+        <CarouselCategory/>
+        <div className="h-[200px]">
+          <img
+            className="h-[100%] m-auto"
+            src={"../images/banner_image.jpg"}
+            alt="Banner 1"
+          />
         </div>
       </div>
     </div>
